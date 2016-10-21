@@ -1,0 +1,41 @@
+{
+  "name": "unicarrier/common",
+  "description": "Universal Carrier Interface",
+  "require": {
+    "php": ">=5.6",
+    "tightenco/collect": "~5.2",
+    "nesbot/carbon": "~1.21"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Toolstation/Repoist.git"
+    }
+  ],
+  "require-dev": {
+    "mockery/mockery": "dev-master",
+    "phpunit/phpunit": "~5.0",
+    "squizlabs/php_codesniffer": "2.*",
+    "johnkary/phpunit-speedtrap": "^1.0",
+    "wsdl2phpgenerator/wsdl2phpgenerator": "~3.3",
+    "symfony/console": "~3.1"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "keywords": [
+    "carrier"
+  ],
+  "autoload": {
+    "psr-4": {
+      "UniCarrier\\Common\\": "UniCarrier/Common/src/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "type": "project",
+  "license": "MIT"
+}
