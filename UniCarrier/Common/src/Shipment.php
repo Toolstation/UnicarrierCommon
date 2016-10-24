@@ -414,23 +414,23 @@ abstract class Shipment implements ShipmentInterface
     /**
      * Get the service enhancements.
      *
-     * @return integer|null
+     * @return array|null
      */
-    public function getServiceEnhancement()
+    public function getServiceEnhancements()
     {
-        return $this->getParameter('serviceEnhancement');
+        return $this->getParameter('serviceEnhancements');
     }
 
     /**
-     * Set the service enhancement.
+     * Set the service enhancements.
      *
-     * @param integer $serviceEnhancement
+     * @param array $serviceEnhancements
      *
      * @return ShipmentInterface
      */
-    public function setServiceEnhancement(int $serviceEnhancement) : ShipmentInterface
+    public function setServiceEnhancements(array $serviceEnhancements) : ShipmentInterface
     {
-        return $this->setParameter('serviceEnhancement', $serviceEnhancement);
+        return $this->setParameter('serviceEnhancements', $serviceEnhancements);
     }
 
     /**
