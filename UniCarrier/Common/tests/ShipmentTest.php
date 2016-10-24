@@ -52,7 +52,7 @@ class ShipmentTest extends \PHPUnit\Framework\TestCase
                 'country' => 'GB',
                 'labelPrinter' => $labelPrinter,
                 'parcels' => $parcels,
-                'serviceEnhancements' => [1],
+                'serviceEnhancement' => 1,
             ]
         );
         $shipment->setId('shipmentId');
@@ -71,8 +71,7 @@ class ShipmentTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals('post town', $shipment->getPostTown());
         $this->assertEquals('postcode', $shipment->getPostcode());
         $this->assertEquals('GB', $shipment->getCountry());
-        $this->assertInternalType('array', $shipment->getServiceEnhancements());
-        $this->assertEquals(1, $shipment->getServiceEnhancements()[0]);
+        $this->assertEquals(1, $shipment->getServiceEnhancement());
     }
 
     /**
